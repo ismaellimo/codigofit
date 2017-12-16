@@ -1,0 +1,1897 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"resu",
+				"resultSearch"
+			],
+			[
+				"_",
+				"_mimetype"
+			],
+			[
+				"des",
+				"desired_width"
+			],
+			[
+				"li",
+				"linkdocumento"
+			],
+			[
+				"txt",
+				"txtFechaNac"
+			],
+			[
+				"txtN",
+				"txtNroDocIdent__CV"
+			],
+			[
+				"str_rep",
+				"str_replace"
+			],
+			[
+				"rem",
+				"removeClass	.removeClass()"
+			],
+			[
+				"file",
+				"fileItemList"
+			],
+			[
+				"cou",
+				"countRsUsuario"
+			],
+			[
+				"con",
+				"contenidomensaje"
+			],
+			[
+				"uer",
+				"user_id"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"lis",
+				"listFIles"
+			],
+			[
+				"index",
+				"indexList"
+			],
+			[
+				"n",
+				"nombre_archivo"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"tr",
+				"trigger	.trigger()"
+			],
+			[
+				"mod",
+				"modCountInvitados"
+			],
+			[
+				"modal",
+				"modalRecomendacion"
+			],
+			[
+				"moda",
+				"modalRecomendacion"
+			],
+			[
+				"_r",
+				"_url"
+			],
+			[
+				"hd",
+				"hdInterfazUsuario"
+			],
+			[
+				"AD",
+				"ADMIN_POSTULANTES"
+			],
+			[
+				"COnt",
+				"ContadoresDashboard"
+			],
+			[
+				"hi",
+				"hdIdUsuario"
+			],
+			[
+				"else",
+				"elseif	elseif …"
+			],
+			[
+				"hdC",
+				"hdCostoHora"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"txtHora",
+				"txtHoraFin_Fly"
+			],
+			[
+				"boot",
+				"bootstrap-material-datetimepicker"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"idusuario",
+				"idusuariofacilitador"
+			],
+			[
+				"LIst",
+				"ListarProfesiones"
+			],
+			[
+				"idusua",
+				"idusuario"
+			],
+			[
+				"an",
+				"anho__default"
+			],
+			[
+				"selec",
+				"selected"
+			],
+			[
+				"sel",
+				"selected"
+			],
+			[
+				"hdId",
+				"hdIdRequerimientos"
+			],
+			[
+				"v",
+				"val	.val()"
+			],
+			[
+				"st",
+				"style_pricing"
+			],
+			[
+				"ch",
+				"checked"
+			],
+			[
+				"chk",
+				"chkAvisoDestacado"
+			],
+			[
+				"direc",
+				"_direct__pay"
+			],
+			[
+				"dir",
+				"_direct_premium"
+			],
+			[
+				"tipo",
+				"tiposuscripcion"
+			],
+			[
+				"data",
+				"data-action"
+			],
+			[
+				"incl",
+				"include"
+			],
+			[
+				"ti",
+				"tipopersona"
+			],
+			[
+				"tex",
+				"text_tipodoc"
+			],
+			[
+				"ddlTip",
+				"ddlTipoPersona"
+			],
+			[
+				"fade",
+				"fadeIn	.fadeIn()"
+			],
+			[
+				"price",
+				"price_table_row"
+			],
+			[
+				"fa-",
+				"fa-times"
+			],
+			[
+				"item",
+				"item_name"
+			],
+			[
+				"cart",
+				"cartList"
+			],
+			[
+				"int",
+				"intro-heading"
+			],
+			[
+				"sea",
+				"search-wrapper"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"box",
+				"box-3"
+			],
+			[
+				"ba",
+				"background-repeat"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"comm",
+				"comment-text"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"owl",
+				"owl-carousel"
+			],
+			[
+				"com",
+				"comment-text"
+			],
+			[
+				"ce",
+				"center-block"
+			],
+			[
+				"nomr",
+				"nombreProducto"
+			],
+			[
+				"resultItem-av",
+				"resultItem-averagePrice"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"res",
+				"resultItem-rating"
+			],
+			[
+				"prec",
+				"precio"
+			],
+			[
+				"create",
+				"crearItemArticulo"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"type",
+				"typelist"
+			],
+			[
+				"ra",
+				"ratingValue"
+			],
+			[
+				"text",
+				"textContent"
+			],
+			[
+				"ListarArticulos__",
+				"ListarArticulos__Individual"
+			],
+			[
+				"data-s",
+				"data-src"
+			],
+			[
+				"reme",
+				"removeClass"
+			],
+			[
+				"und",
+				"undefined"
+			],
+			[
+				"sele",
+				"selector__visible"
+			],
+			[
+				"selector__",
+				"selector__data"
+			],
+			[
+				"MDL",
+				"mdl-grid"
+			],
+			[
+				"Listar",
+				"ListarArticulos__Individual"
+			],
+			[
+				"MAR",
+				"margin-bottom"
+			],
+			[
+				"scroll",
+				"scrollbarra"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"is__",
+				"is__setted__question_location"
+			],
+			[
+				"is",
+				"is__built__map"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"Most",
+				"MostrarMesas"
+			],
+			[
+				"lugar",
+				"lugar__destino"
+			],
+			[
+				"tm_lo",
+				"tm_longitud"
+			],
+			[
+				"selecc",
+				"seleccionarMesa"
+			],
+			[
+				"COnfi",
+				"ConfirmarUbicacion"
+			],
+			[
+				"cont",
+				"container-body"
+			],
+			[
+				"mdl-cell--",
+				"mdl-cell--12-col-phone"
+			],
+			[
+				"gv",
+				"gvOrdenes"
+			],
+			[
+				"gp-",
+				"gp-body"
+			],
+			[
+				"hdIdC",
+				"hdIdCliente"
+			],
+			[
+				"ver",
+				"VerOrden"
+			],
+			[
+				"hdIdA",
+				"hdIdArticulo"
+			],
+			[
+				"hdo",
+				"hdPrecio"
+			],
+			[
+				"tm_",
+				"tm_nombre_comercial"
+			],
+			[
+				"tio",
+				"tipoconsulta"
+			],
+			[
+				"pnl",
+				"pnlArticulo"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"carta",
+				"cartadia"
+			],
+			[
+				"cartadi",
+				"cartadia-search"
+			],
+			[
+				"nombre",
+				"nombreProducto"
+			],
+			[
+				"tm",
+				"tm_nombre"
+			],
+			[
+				"sqlid",
+				"sqlidempresa"
+			],
+			[
+				"sqlce",
+				"sqlidcentro"
+			],
+			[
+				"lu",
+				"lugar__destino"
+			],
+			[
+				"Con",
+				"ConstruirMapa"
+			],
+			[
+				"_d",
+				"_destino_name"
+			],
+			[
+				"tm_id",
+				"tm_idcentro"
+			],
+			[
+				"_de",
+				"_destino_name"
+			],
+			[
+				"btnConfi",
+				"btnCOnfirmarUbicacion"
+			],
+			[
+				"show",
+				"show_modal_in_not_located"
+			],
+			[
+				"openC",
+				"openModalCallBack"
+			],
+			[
+				"_Des",
+				"_destino_lat"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/lovelessisma/Descargas/BASE_DATOS.SQL",
+			"settings":
+			{
+				"buffer_size": 1595415,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "adata/Db.class.php",
+			"settings":
+			{
+				"buffer_size": 10048,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "login.php",
+			"settings":
+			{
+				"buffer_size": 12752,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "recoverypass.php",
+			"settings":
+			{
+				"buffer_size": 2825,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "verifynewpass.php",
+			"settings":
+			{
+				"buffer_size": 4747,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "preliminar.php",
+			"settings":
+			{
+				"buffer_size": 2976,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/app/admin/clientes-script.js",
+			"settings":
+			{
+				"buffer_size": 11979,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scripts/app/admin/cliente-script.js",
+			"settings":
+			{
+				"buffer_size": 12303,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "common/contents.php",
+			"settings":
+			{
+				"buffer_size": 16455,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "views/admin/cliente-list.php",
+			"settings":
+			{
+				"buffer_size": 8608,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 398.0,
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Packages",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"te",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"Te",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"text pa",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"textp",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"insal",
+				"Package Control: Install Package"
+			],
+			[
+				"removep",
+				"Package Control: Remove Package"
+			]
+		],
+		"width": 581.0
+	},
+	"console":
+	{
+		"height": 160.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/html/codigofit/views/admin/customers-list.php",
+		"/var/www/html/chivoonline3/assets/js/simple_paginator.js",
+		"/var/www/html/chivoonline3/assets/js/app/panel_usuarios.js",
+		"/var/www/html/chivoonline3/services/usuario-facilitador-search.php",
+		"/var/www/html/chivoonline3/panel_cuenta.php",
+		"/var/www/html/chivoonline3/assets/js/app/panel_cuenta.js",
+		"/var/www/html/chivoonline3/assets/js/app/panel_avisos.js",
+		"/home/lovelessisma/Documentos/proyectos/Chivoonline2/config.xml",
+		"/tmp/fz3temp-1/facturacion-post.php",
+		"/home/lovelessisma/Descargas/script_glucosmartdb.sql",
+		"/var/www/html/chivoonline3/services/requerimiento-search.php",
+		"/var/www/html/chivoonline3/assets/js/functions.js",
+		"/var/www/html/chivoonline3/services/raccess.php",
+		"/home/lovelessisma/Descargas/codigofi_BD.sql",
+		"/var/www/html/chivoonline3/services/registrows-post.php",
+		"/var/www/html/chivoonline3/common/functions.php",
+		"/var/www/html/chivoonline3/services/login.php",
+		"/var/www/html/chivoonline3/common/sesion.class.php",
+		"/var/www/html/chivoonline3/services/regfacilitador_one-post.php",
+		"/var/www/html/chivoonline3/services/curriculum-save_ws-post2.php",
+		"/var/www/html/chivoonline3/assets/js/app/start.js",
+		"/var/www/html/chivoonline3/services/curriculum_ws-post.php",
+		"/var/www/html/chivoonline3/assets/js/app/facilitador.js",
+		"/var/www/html/chivoonline3/services/facilitador-search_ws.php",
+		"/var/www/html/chivoonline3/services/precio_ws.php",
+		"/var/www/html/chivoonline3/bussiness/usuario.php",
+		"/var/www/html/chivoonline3/services/usuario-facilitador-search_ws.php",
+		"/home/lovelessisma/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/var/www/html/chivoonline3/assets/js/app/regfacilitador_one.js",
+		"/var/www/html/chivoonline3/adata/Db.class.php",
+		"/var/www/html/chivoonline3/adata/Db-OneConnect.class.php",
+		"/var/www/html/chivoonline3/assets/js/app/regfacilitador_three.js",
+		"/var/www/html/chivoonline3/logout.php",
+		"/var/www/html/chivoonline3/assets/js/app/index.js",
+		"/var/www/html/chivoonline3/upload.php",
+		"/var/www/html/chivoonline3/services/start-post.php",
+		"/var/www/html/chivoonline3/services/rsignup.php",
+		"/var/www/html/chivoonline3/services/check-email.php",
+		"/var/www/html/chivoonline3/registro.php",
+		"/var/www/html/chivoonline3/common/init_uservars.php",
+		"/var/www/html/chivoonline3/convertidor_photos.html",
+		"/home/lovelessisma/Descargas/tm_usuario.sql",
+		"/var/www/html/chivoonline3/facilitador.php",
+		"/var/www/html/chivoonline3/assets/js/app/search-usuario.js",
+		"/var/www/html/chivoonline3/assets/js/app/search-facilitador.js",
+		"/var/www/html/chivoonline3/aviso.php",
+		"/var/www/html/chivoonline3/assets/js/app/aviso.js",
+		"/var/www/html/chivoonline3/common/libraries-js.php",
+		"/var/www/html/chivoonline3/assets/js/scale-image.js",
+		"/var/www/html/chivoonline3/leer_photos.php",
+		"/var/www/html/chivoonline3/assets/js/upload-photo.js",
+		"/home/lovelessisma/Descargas/domready.js",
+		"/var/www/html/chivoonline3/convertidor_photos.php",
+		"/var/www/html/chivoonline3/cart.php",
+		"/var/www/html/chivoonline3/regfacilitador_one.php",
+		"/var/www/html/chivoonline3/services/usuario-search.php",
+		"/var/www/html/chivoonline3/assets/js/app/regusuario-one.js",
+		"/var/www/html/chivoonline3/services/raccess-post.php",
+		"/var/www/html/chivoonline3/regfacilitador_four.php",
+		"/var/www/html/chivoonline3/services/requerimiento-search_ws.php",
+		"/var/www/html/chivoonline3/common/aside_panel.php",
+		"/var/www/html/chivoonline3/services/requerimiento-post.php",
+		"/var/www/html/chivoonline3/services/requerimiento_ws.php",
+		"/var/www/html/chivoonline3/regfacilitador_three.php",
+		"/var/www/html/chivoonline3/services/regaviso_ws.php",
+		"/var/www/html/chivoonline3/common/session-starting.php",
+		"/var/www/html/chivoonline3/index.php",
+		"/var/www/html/chivoonline3/services/carritocompra-notify.php",
+		"/var/www/html/chivoonline3/recovery_pass-post.php",
+		"/home/lovelessisma/Descargas/SDK/python/EventsListener.py",
+		"/var/www/html/chivoonline3/assets/plugins/split/css/main.css",
+		"/var/www/html/chivoonline3/bussiness/cart_oneconnect.php",
+		"/var/www/html/chivoonline3/services/cart-post.php",
+		"/var/www/html/chivoonline3/services/counter.php",
+		"/var/www/html/chivoonline3/js/agency.js",
+		"/var/www/html/chivoonline3/search.php",
+		"/var/www/html/chivoonline3/assets/plugins/tempaviso/style.css",
+		"/var/www/html/chivoonline3/assets/css/common.css",
+		"/var/www/html/chivoonline3/facilitador3.php",
+		"/var/www/html/chivoonline3/assets/plugins/split/css/base.css",
+		"/var/www/html/chivoonline3/services/facilitador-search.php",
+		"/var/www/html/chivoonline3/common/header.php",
+		"/home/lovelessisma/Descargas/web (2)/index.html",
+		"/var/www/html/chivoonline3/assets/js/app/search.js",
+		"/var/www/html/chivoonline3/bootstrap/css/bootstrap.css",
+		"/home/lovelessisma/Descargas/web (2)/css/style.css",
+		"/var/www/html/chivoonline3/facilitador2.php",
+		"/home/lovelessisma/Descargas/webfontkit-20170825-200726/stylesheet.css",
+		"/var/www/html/chivoonline3/aviso3.php",
+		"/var/www/html/chivoonline3/assets/css/main.css",
+		"/home/lovelessisma/Documentos/tamboapp-2017-08-25 16_06_52.sql",
+		"/home/lovelessisma/cherryn/mireya/nuevas_fotosxd/chivoonl_database.sql",
+		"/var/www/html/chivoonline3/assets/plugins/boostrap-material-datepicker/js/moment-with-locales.min.js",
+		"/var/www/html/chivoonline3/assets/plugins/templatemo/css/templatemo-orange.css",
+		"/home/lovelessisma/Documentos/dump.sql",
+		"/var/www/html/chivoonline3/common/main-menu.php",
+		"/var/www/html/chivoonline3/faqs.php",
+		"/var/www/html/chivoonline3/assets/plugins/split/js/script.js",
+		"/home/lovelessisma/cherryn/mireya/nuevas_fotosxd/demo.mutationmedia.net/SPLIT/index.html",
+		"/home/lovelessisma/Documentos/borrar-chivos.sql",
+		"/var/www/html/chivoonline3/assets/css/tagcloud.css",
+		"/home/lovelessisma/Descargas/dump.sql",
+		"/var/www/html/chivoonline3/assets/js/jquery-ui.min.js",
+		"/var/www/html/chivoonline3/payment.php",
+		"/var/www/html/chivoonline3/common/init_session.php",
+		"/var/www/html/chivoonline3/regusuario_one.php",
+		"/var/www/html/chivoonline3/confirm.php",
+		"/var/www/html/chivoonline3/services/regusuario_one-post.php",
+		"/var/www/html/chivoonline3/assets/js/app/cart-form.js",
+		"/var/www/html/chivoonline3/assets/js/app/cart.js",
+		"/var/www/html/chivoonline3/assets/js/app/cart-usuario.js",
+		"/tmp/fz3temp-1/error_log",
+		"/var/www/html/chivoonline3/bussiness/requerimiento_oneconnect.php",
+		"/var/www/html/chivoonline3/bussiness/compra.php",
+		"/var/www/html/chivoonline3/bussiness/contratofacilitador.php",
+		"/var/www/html/chivoonline3/bussiness/requerimiento.php",
+		"/var/www/html/chivoonline3/bussiness/detallerequerimiento.php",
+		"/var/www/html/chivoonline3/services/compra-update.php",
+		"/home/lovelessisma/Documentos/proyectos/Chivoonline/config.xml",
+		"/var/www/html/chivoonline3/pricing.php",
+		"/var/www/html/chivoonline3/services/panel_settings-post.php",
+		"/var/www/html/chivoonline3/api/fbconfig.php",
+		"/var/www/html/chivoonline3/premium.php",
+		"/var/www/html/chivoonline3/common/formlogin.php",
+		"/var/www/html/chivoonline3/common/listpricing.php",
+		"/var/www/html/chivoonline3/services/sign_in.php",
+		"/run/user/1000/gvfs/archive:host=file%253A%252F%252F%252Fhome%252Flovelessisma%252Fcherryn%252Fmireya%252Fnuevas_fotosxd%252FimgSeek-0.8.6.tar.bz2/imgSeek-0.8.6/README",
+		"/home/lovelessisma/cherryn/mireya/nuevas_fotosxd/startbootstrap-agency-gh-pages/index.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/var/www/html/chivoonline3",
+			"/var/www/html/tamboapp-alpha",
+			"D:\\servers\\xampp\\htdocs\\tamboapp-alpha",
+			"D:\\servers\\xampp\\htdocs\\chivoonline",
+			"D:\\servers\\xampp\\htdocs\\inmobiliaria"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"BuscarDatos",
+			"hdIdCentro",
+			"cliente",
+			"btnLogin",
+			"pnlLogin",
+			"login",
+			"INT",
+			"SMALLINT",
+			"DATETIME",
+			"INT",
+			"SMALLINT",
+			"INT",
+			"TINYINT",
+			"VARCHAR",
+			"selector",
+			"ListarRequerimientos",
+			"showFormMails",
+			"showFormInvite",
+			"modalEmail",
+			",",
+			"body",
+			"_scrollTop",
+			"resultSearch",
+			"ListarUsuarioFacilitador",
+			"152",
+			"size152",
+			"documentolink",
+			"process",
+			"_GET",
+			"txtNroIdentificacion",
+			"ddlTipoIdentificacion",
+			"png",
+			"Numix",
+			"imagecreatefromjpeg",
+			"@",
+			"header",
+			"output_file",
+			"echo",
+			"42",
+			"imagen",
+			"_s150",
+			"_150",
+			"imagen",
+			"foto",
+			"setFoto",
+			"Foto",
+			"foto",
+			"listFIles",
+			"exec_sp_select",
+			"oldphoto, $newphoto",
+			"../",
+			"elemsSelected",
+			"EliminarItemProyecto",
+			"EliminarProyecto",
+			"fileUploadImage",
+			"},{",
+			"./../",
+			"idubigeo",
+			"<?",
+			"idubigeo",
+			"ListarUbigeo",
+			"control",
+			"second_form",
+			"partes_ruta",
+			"nombre_archivo",
+			"$telefono,",
+			"_o.",
+			"_o",
+			"extension",
+			"_GET",
+			"fileValue",
+			"second_form",
+			"_GET",
+			"valid",
+			"soloLetras",
+			"prepareImport",
+			"generateRandomString",
+			"ddlTipoIdentificacion",
+			"rowTipoIdentificacion",
+			"<?",
+			" || ($flg_fullaccess == 1)",
+			"endif",
+			"isset($_GET['",
+			"$_GET['",
+			"isset($_GET[",
+			"_GET",
+			"txtValorHora",
+			"_POST",
+			"titulomsje",
+			"interfazusuario",
+			"IdDetalleReq",
+			"IdUsuario",
+			"user_id",
+			"lang",
+			"recomendador",
+			"modalRecomendacion",
+			"text_link_usuarios",
+			"Seguidores",
+			"$('#hdInterfazUsuario').val()",
+			"id=\"modCount",
+			"mod",
+			"selector",
+			" id=\"lbl",
+			"lbl",
+			"EMPLEADOR_COMPRAS",
+			"FACILITADOR_",
+			"id=\"lbl",
+			"selector =",
+			"ContadoresDashboard",
+			"hdInterfazUsuario",
+			"Counter",
+			"EMPLEADOR",
+			"counter",
+			"== '",
+			" tipo = '",
+			"btnAgregarCarrito",
+			"_req').val(),",
+			"exec_sp_select(",
+			"MostrarPagoFacilitador",
+			"MostrarPagoAviso",
+			"MostrarPagoFacilitador",
+			"hdCostoHora",
+			"MostrarPagoFacilitador",
+			"hdCostoHora",
+			"monto_item",
+			"hdIdMoneda__Facilitador",
+			"h3",
+			"hdIdRequerimiento"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"\\LR",
+			"",
+			"<?php include 'common/footer_panel.php'; ?>",
+			"<?php include 'common/footer_panel'; ?>",
+			"cinadsac_inmobiliaria",
+			"postgres",
+			"cinadsac_inmobiliaria",
+			"globalme_inmobiliaria",
+			"globalme_restoapp",
+			"&Uacute;",
+			"&Oacute;",
+			"&Iacute;",
+			"&Eacute;",
+			"&Aacute;",
+			"&Ntilde;",
+			"&ntilde;",
+			"&oacute;",
+			"&uacute;",
+			"&iacute;",
+			"&eacute;",
+			"&aacute;",
+			"cinadsac_inmobiliaria",
+			"postgres",
+			"cinadsac_inmobiliaria",
+			"globalme_inmobiliaria",
+			"postgres",
+			"cinadsac_inmobiliaria",
+			"postgres",
+			"cinadsac_inmobiliaria",
+			"postgres",
+			"cinadsac_inmobiliaria",
+			"postgres",
+			"cinadsac_inmobiliaria",
+			"postgres",
+			"cinadsac_inmobiliaria",
+			"sin",
+			"Sintitulo-",
+			"tm_ubigeo",
+			"INSERT INTO",
+			"'",
+			"",
+			";",
+			"",
+			"activo",
+			"tm_nombre",
+			"ta_tipoubigeo",
+			"tm_idubigeoref",
+			"playtech_bd",
+			"playtech_admin",
+			"globalme_playtech",
+			"postgres",
+			"globalme_playtech",
+			"playtech_admin",
+			"",
+			"postgres",
+			"globalme_playtech",
+			"postgres",
+			"globalme_playtech",
+			"",
+			"globalme_playtech",
+			"globame_playtech",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/lovelessisma/Descargas/BASE_DATOS.SQL",
+					"settings":
+					{
+						"buffer_size": 1595415,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1590070,
+								1590070
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 471600.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "adata/Db.class.php",
+					"settings":
+					{
+						"buffer_size": 10048,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								409,
+								409
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "login.php",
+					"settings":
+					{
+						"buffer_size": 12752,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1966,
+								1966
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 278.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "recoverypass.php",
+					"settings":
+					{
+						"buffer_size": 2825,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1971,
+								1971
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 386.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "verifynewpass.php",
+					"settings":
+					{
+						"buffer_size": 4747,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4481,
+								4481
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1134.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "preliminar.php",
+					"settings":
+					{
+						"buffer_size": 2976,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1372,
+								1372
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "scripts/app/admin/clientes-script.js",
+					"settings":
+					{
+						"buffer_size": 11979,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5509,
+								5509
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2885.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "scripts/app/admin/cliente-script.js",
+					"settings":
+					{
+						"buffer_size": 12303,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7806,
+								7806
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3731.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "common/contents.php",
+					"settings":
+					{
+						"buffer_size": 16455,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5506,
+								5506
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1066.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "views/admin/cliente-list.php",
+					"settings":
+					{
+						"buffer_size": 8608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								763,
+								763
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"cliente-",
+				"views/admin/cliente-list.php"
+			],
+			[
+				"cont",
+				"common/contents.php"
+			],
+			[
+				"cliente-s",
+				"scripts/app/admin/cliente-script.js"
+			],
+			[
+				"customer",
+				"views/admin/customers-list.php"
+			],
+			[
+				"clientes-",
+				"scripts/app/admin/clientes-script.js"
+			],
+			[
+				"",
+				"recoverypass.php"
+			],
+			[
+				"prel",
+				"preliminar.php"
+			],
+			[
+				"log",
+				"login.php"
+			],
+			[
+				"db.",
+				"adata/Db.class.php"
+			],
+			[
+				"racc",
+				"services/raccess.php"
+			],
+			[
+				"func",
+				"assets/js/functions.js"
+			],
+			[
+				"rquerimiento-s",
+				"services/requerimiento-search.php"
+			],
+			[
+				"anel_av",
+				"assets/js/app/panel_avisos.js"
+			],
+			[
+				"panel_cue",
+				"assets/js/app/panel_cuenta.js"
+			],
+			[
+				"panel_cuenta",
+				"panel_cuenta.php"
+			],
+			[
+				"usu",
+				"services/usuario-facilitador-search.php"
+			],
+			[
+				"panel_usu",
+				"assets/js/app/panel_usuarios.js"
+			],
+			[
+				"si",
+				"assets/js/simple_paginator.js"
+			],
+			[
+				"simpl",
+				"assets/js/simple_paginator.js"
+			],
+			[
+				"usuario",
+				"services/usuario-facilitador-search.php"
+			],
+			[
+				"us",
+				"bussiness/usuario.php"
+			],
+			[
+				"fun",
+				"assets/js/functions.js"
+			],
+			[
+				"_ws",
+				"services/precio_ws.php"
+			],
+			[
+				"facilitador-sea",
+				"services/usuario-facilitador-search_ws.php"
+			],
+			[
+				"facilitado",
+				"services/facilitador-search.php"
+			],
+			[
+				"facilit",
+				"assets/js/app/facilitador.js"
+			],
+			[
+				"registro",
+				"services/registrows-post.php"
+			],
+			[
+				"curr",
+				"services/curriculum_ws-post.php"
+			],
+			[
+				"st",
+				"assets/js/app/start.js"
+			],
+			[
+				"sta",
+				"assets/js/app/start.js"
+			],
+			[
+				"regfacilitador_one",
+				"assets/js/app/regfacilitador_one.js"
+			],
+			[
+				"regfacilitador_thr",
+				"assets/js/app/regfacilitador_three.js"
+			],
+			[
+				"regfac",
+				"services/regfacilitador_one-post.php"
+			],
+			[
+				"db-",
+				"adata/Db-OneConnect.class.php"
+			],
+			[
+				"curri",
+				"services/curriculum-save_ws.php"
+			],
+			[
+				"ses",
+				"common/sesion.class.php"
+			],
+			[
+				"logo",
+				"logout.php"
+			],
+			[
+				"login",
+				"services/login.php"
+			],
+			[
+				"regis",
+				"services/registrows-post.php"
+			],
+			[
+				"star",
+				"assets/js/app/start.js"
+			],
+			[
+				"scale",
+				"assets/js/scale-image.js"
+			],
+			[
+				"libr",
+				"common/libraries-js.php"
+			],
+			[
+				"regi",
+				"registro.php"
+			],
+			[
+				"facili",
+				"assets/js/app/facilitador.js"
+			],
+			[
+				"avis",
+				"assets/js/app/aviso.js"
+			],
+			[
+				"avi",
+				"aviso.php"
+			],
+			[
+				"faci",
+				"facilitador.php"
+			],
+			[
+				"search",
+				"assets/js/app/search-facilitador.js"
+			],
+			[
+				"search-",
+				"assets/js/app/search-usuario.js"
+			],
+			[
+				"r",
+				"registro.php"
+			],
+			[
+				"faciliador",
+				"assets/js/app/facilitador.js"
+			],
+			[
+				"start",
+				"assets/js/app/start.js"
+			],
+			[
+				"uploa",
+				"assets/js/upload-photo.js"
+			],
+			[
+				"conve",
+				"convertidor_photos.html"
+			],
+			[
+				"init",
+				"common/init_uservars.php"
+			],
+			[
+				"reg",
+				"registro.php"
+			],
+			[
+				"checkl",
+				"services/check-email.php"
+			],
+			[
+				"rsi",
+				"services/rsignup.php"
+			],
+			[
+				"upla",
+				"upload.php"
+			],
+			[
+				"index.",
+				"assets/js/app/index.js"
+			],
+			[
+				"rsign",
+				"services/rsignup.php"
+			],
+			[
+				"start-",
+				"services/start-post.php"
+			],
+			[
+				"uplo",
+				"upload.php"
+			],
+			[
+				"regusu",
+				"assets/js/app/regusuario-one.js"
+			],
+			[
+				"usuario-s",
+				"services/usuario-search.php"
+			],
+			[
+				"u",
+				"upload.php"
+			],
+			[
+				"regfacilitador_one.",
+				"assets/js/app/regfacilitador_one.js"
+			],
+			[
+				"regfa",
+				"regfacilitador_one.php"
+			],
+			[
+				"fac",
+				"facilitador.php"
+			],
+			[
+				"usuario-facilitador-search_ws",
+				"services/usuario-facilitador-search_ws.php"
+			],
+			[
+				"cart",
+				"cart.php"
+			],
+			[
+				"cary",
+				"services/carritocompra-notify.php"
+			],
+			[
+				"ind",
+				"index.php"
+			],
+			[
+				"facilitador.ph",
+				"facilitador.php"
+			],
+			[
+				"inde",
+				"assets/js/app/index.js"
+			],
+			[
+				"db.c",
+				"adata/Db.class.php"
+			],
+			[
+				"ws",
+				"services/regaviso_ws.php"
+			],
+			[
+				"-p",
+				"recovery_pass-post.php"
+			],
+			[
+				"preci",
+				"services/precio_ws.php"
+			],
+			[
+				"regfacilitadort",
+				"services/regfacilitador_three-post.php"
+			],
+			[
+				"regfacili",
+				"regfacilitador_three.php"
+			],
+			[
+				"aviso",
+				"assets/js/app/aviso.js"
+			],
+			[
+				"requerimiento",
+				"services/requerimiento_ws.php"
+			],
+			[
+				"requerimient",
+				"services/requerimiento-post.php"
+			],
+			[
+				"requerimiento-s",
+				"services/requerimiento-search_ws.php"
+			],
+			[
+				"aside",
+				"common/aside_panel.php"
+			],
+			[
+				"panel",
+				"panel_cuenta.php"
+			],
+			[
+				"panel_cuen",
+				"assets/js/app/panel_cuenta.js"
+			],
+			[
+				"requir",
+				"services/requerimiento-search_ws.php"
+			],
+			[
+				"se",
+				"search.php"
+			],
+			[
+				"sea",
+				"search.php"
+			],
+			[
+				"pan",
+				"panel_cuenta.php"
+			],
+			[
+				"panel_cu",
+				"panel_cuenta.php"
+			],
+			[
+				"coun",
+				"services/counter.php"
+			],
+			[
+				"age",
+				"js/agency.js"
+			],
+			[
+				"ount",
+				"services/counter.php"
+			],
+			[
+				"index.js",
+				"assets/js/app/index.js"
+			],
+			[
+				"cart-",
+				"services/cart-post.php"
+			],
+			[
+				"requerimiento-sea",
+				"services/requerimiento-search_ws.php"
+			],
+			[
+				"reque",
+				"services/requerimiento-search.php"
+			],
+			[
+				"oneco",
+				"bussiness/cart_oneconnect.php"
+			],
+			[
+				"onecc",
+				"adata/Db-OneConnect.class.php"
+			],
+			[
+				"requer",
+				"services/requerimiento-search.php"
+			],
+			[
+				"requermiento-s",
+				"services/requerimiento-search.php"
+			],
+			[
+				"faciliador.",
+				"assets/js/app/facilitador.js"
+			],
+			[
+				"main.css",
+				"assets/plugins/split/css/main.css"
+			],
+			[
+				"facil",
+				"facilitador.php"
+			],
+			[
+				"facilitador.js",
+				"assets/js/app/facilitador.js"
+			],
+			[
+				"head",
+				"common/header.php"
+			],
+			[
+				"faciliad",
+				"assets/js/app/facilitador.js"
+			],
+			[
+				"faciliador.j",
+				"assets/js/app/facilitador.js"
+			],
+			[
+				"facilitador-s",
+				"services/facilitador-search.php"
+			],
+			[
+				"usuario-fac",
+				"services/usuario-facilitador-search_ws.php"
+			],
+			[
+				"usuar",
+				"services/usuario-facilitador-search.php"
+			],
+			[
+				"facilita",
+				"assets/js/app/facilitador.js"
+			],
+			[
+				"bas",
+				"assets/plugins/split/css/base.css"
+			],
+			[
+				"com",
+				"assets/css/common.css"
+			],
+			[
+				"facilitador3.",
+				"facilitador3.php"
+			],
+			[
+				"rac",
+				"services/raccess.php"
+			],
+			[
+				"comm",
+				"assets/css/common.css"
+			],
+			[
+				"aviso.",
+				"assets/js/app/aviso.js"
+			],
+			[
+				"avio",
+				"aviso.php"
+			],
+			[
+				"av",
+				"aviso.php"
+			],
+			[
+				"in",
+				"index.php"
+			],
+			[
+				"a",
+				"aviso.php"
+			],
+			[
+				"sty",
+				"assets/plugins/tempaviso/style.css"
+			],
+			[
+				"boo",
+				"bootstrap/css/bootstrap.css"
+			],
+			[
+				"searc",
+				"assets/js/app/search.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 231.0,
+	"status_bar_visible": true
+}

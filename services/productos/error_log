@@ -1,0 +1,1 @@
+[03-Dec-2017 19:13:24 America/Lima] PHP Fatal error:  Call to a member function Listar() on a non-object in /home/codigofit/public_html/app/services/productos/productos-search.php on line 55

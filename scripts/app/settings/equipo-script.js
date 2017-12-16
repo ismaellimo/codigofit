@@ -119,7 +119,7 @@ function GoToEdit (idItem) {
         else {
             $.ajax({
                 type: "GET",
-                url: 'services/Equipo/Equipo-getdetails.php',
+                url: 'services/equipo/equipo-getdetails.php',
                 cache: false,
                 dataType: 'json',
                 data: 'id=' + idItem,
@@ -166,7 +166,7 @@ function BuscarDatos (pagina) {
     
     $.ajax({
         type: "GET",
-        url: "services/Equipo/Equipo-search.php",
+        url: "services/equipo/equipo-search.php",
         cache: false,
         dataType: 'json',
         data: {
@@ -182,7 +182,7 @@ function BuscarDatos (pagina) {
 
             if (countdata > 0){
                 while(i < countdata){
-                    var iditem = data[i].tm_idEquipo;
+                    var iditem = data[i].tm_idequipo;
                     var foto = data[i].tm_foto.replace('_o', '_s42');
 
                     strhtml += '<li class="collection-item avatar no-border dato" data-idmodel="' + iditem + '"  data-baselement="' + selectorgrid + '">';

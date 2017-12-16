@@ -10,11 +10,11 @@
             <i class="material-icons">&#xE145;</i>
         </a>
     </div>
-    <div id="modalRegistro" class="modal-example-content expand-phone">
+    <div id="pnlForm" class="modal-example-content expand-phone">
         <div class="modal-example-header no-padding mdl-layout--fixed-header">
             <header class="mdl-layout__header">
                 <div class="mdl-layout__header-row">
-                    <span class="mdl-layout-title">Rutinas gym</span>
+                    <span class="mdl-layout-title">Detalle de las Rutinas gym</span>
                 </div>
             </header>
             <div title="<?php $translate->__('Ocultar'); ?>" class="close-dialog mdl-button--icon mdl-layout__drawer-button">
@@ -26,27 +26,70 @@
         <div class="modal-example-body">
             <input type="hidden" id="hdIdPrimary" name="hdIdPrimary" value="0">
             <div class="scrollbarra padding20">
-                <div class="row no-margin">
-                    <div class="input-field">
-                        <input id="txtNombre" name="txtNombre" type="text" placeholder="Ingrese nombre" />
-                        <label for="txtNombre"><?php $translate->__('Nombre'); ?></label>
+                <div class="row">
+                    <div class="col-md-12">        
+                        <div class="row no-margin">
+                            <div class="input-field">
+                                <input id="txtDetalle" name="txtDetalle" type="text" placeholder="Trabajo a realizar" />
+                                <label for="txtDetalle"><?php $translate->__('Trabajo a realizar'); ?></label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="row no-margin">
-                    <div class="input-field">
-                        <input id="txtCaloriasMinima" name="txtCaloriasMinima" type="text" placeholder="Ingrese calorías minimas" />
-                        <label for="txtCaloriasMinima"><?php $translate->__('Calorías mínimas'); ?></label>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-field">
+                            <select name="ddlRutina" id="ddlRutina" class="browser-default">
+                            </select>
+                            <label class="active" for="ddlRutina"><?php $translate->__('Rutina'); ?></label>
+                        </div>
                     </div>
                 </div>
-
-                <div class="row no-margin">
-                    <div class="input-field">
-                        <input id="txtCaloriasMaxima" name="txtCaloriasMaxima" type="text" placeholder="Ingrese calorías máximas" />
-                        <label for="txtCaloriasMaxima"><?php $translate->__('Calorías máximas'); ?></label>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-field">
+                            <select name="ddlZonacorporal" id="ddlZonacorporal" class="browser-default">
+                            </select>
+                            <label class="active" for="ddlZonacorporal"><?php $translate->__('Zonacorporal'); ?></label>
+                        </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-field">
+                            <select name="ddlEquipo" id="ddlEquipo" class="browser-default">
+                            </select>
+                            <label class="active" for="ddlEquipo"><?php $translate->__('Equipo'); ?></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="row no-margin">
+                            <div class="input-field">
+                                <input id="txtSerie" name="numeric" type="text" placeholder="Ingrese series" />
+                                <label for="txtSerie"><?php $translate->__('Series'); ?></label>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-md-4">
+                        <div class="row no-margin">
+                            <div class="input-field">
+                                <input id="txtRepeticiones" name="numeric" type="text" placeholder="Ingrese repeticiones" />
+                                <label for="txtRepeticiones"><?php $translate->__('Repeticiones'); ?></label>
+                            </div>
+                        </div>
+                    </div>                        
+                    <div class="col-md-4">
+                        <div class="row no-margin">
+                            <div class="input-field">
+                                <input id="txtPeso" name="numeric" type="text" placeholder="Ingrese peso a cargar" />
+                                <label for="txtPeso"><?php $translate->__('Peso a cargar (Kgs.)'); ?></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="modal-example-footer">

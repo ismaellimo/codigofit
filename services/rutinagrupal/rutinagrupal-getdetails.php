@@ -2,6 +2,9 @@
 require '../../adata/Db.class.php';
 require '../../bussiness/rutinagrupal.php';
 
+$IdEmpresa = 1;
+$IdCentro = 1;
+
 $isAjax = isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND
 strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest';
 if(!$isAjax) {
@@ -16,10 +19,18 @@ if ( !isset($_REQUEST['id']) ) {
 
 $row = array(array());
 
+$IdEmpresa = isset($_GET['idempresa']) ? $_GET['idempresa'] : '0';
+$IdCentro = isset($_GET['idcentro']) ? $_GET['idcentro'] : '0';
+$criterio = (isset($_GET['criterio'])) ? $_GET['criterio'] : '';
+$criterio = trim(strip_tags($criterio));
+$criterio = preg_replace('/\s+/', ' ', $criterio);
+
 $id = isset($_GET['id']) ? $_GET['id'] : '0';
 
-$objData = new clsRutinagrupal();
-$row = $objData->Listar('2', 0, 0, $id, '', 1);
+$objData = new clsrutinagrupal();
+
+$row = $objData->Listar('2', $IdEmpresa, $IdCentro, $id, $criterio);
+
 
 if (isset($row))
 	echo json_encode($row);

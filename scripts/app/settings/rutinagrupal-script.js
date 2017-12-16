@@ -69,9 +69,13 @@ $(function () {
         event.preventDefault();
         GoToEdit('0');
     });
-
+    
     $('#btnGuardar').on('click', function (event) {
         event.preventDefault();
+
+        ///if ($('#chkCrearUsuario')[0].checked) {
+            
+        //}            
         GuardarDatos();
     });
 });
@@ -86,9 +90,11 @@ var datagrid = new DataList('#gvDatos', {
     }
 });
 
+
 function LimpiarForm () {
-    $('#txtNombre').val('');
-    $('#txtMinutos').val('');
+    $('#txtMinutos').val(0);
+    $('#txtNombreRutina').val('').focus();
+    Materialize.updateTextFields();
 }
 
 function GoToEdit (idItem) {
@@ -100,30 +106,39 @@ function GoToEdit (idItem) {
     precargaExp(selectorModal, true);
 
     resetFoto('new');
-    LimpiarForm();
     // resetForm(selectorModal);
 
     // removeValidFormRegister();
     // addValidFormRegister();
 
-    openModalCallBack(selectorModal, function () {
+    LimpiarForm();
 
-        if (idItem == '0')
-            precargaExp(selectorModal, false);
+    openModalCallBack(selectorModal, function () {
+        if (idItem == '0'){
+
+           precargaExp(selectorModal, false);
+
+            $('#txtNombreRutina').focus();
+        }
         else {
             $.ajax({
-                type: "GET",
+                type: 'GET',
                 url: 'services/rutinagrupal/rutinagrupal-getdetails.php',
                 cache: false,
                 dataType: 'json',
                 data: 'id=' + idItem,
                 success: function (data) {
                     if (data.length > 0){
+                        //var foto = data[0].tm_foto;
                         var foto_original = data[0].tm_foto;
                         var foto_edicion = foto_original.replace("_o", "_s255");
 
                         $('#hdIdPrimary').val(data[0].tm_idrutinagrupal);
                         $('#txtMinutos').val(data[0].tm_minutos_sep);
+
+                        
+                        // $('#ddlCargoReg').changeMaterialSelect(data[0].tp_idcargo);
+                        // $('#ddlAreaReg').changeMaterialSelect(data[0].tp_idarea);
 
                         if (foto_original != 'no-set')
                             setFoto(foto_edicion);
@@ -132,15 +147,12 @@ function GoToEdit (idItem) {
 
                         imgFoto.setAttribute('data-src', foto_edicion);
                         hdFoto.value = foto_original;
-                        $('#txtNombre').val(data[0].tm_nombre).focus();
-                        
+                        $('#txtNombreRutina').val(data[0].tm_nombre).focus();
+
                         Materialize.updateTextFields();
                     };
-                    
+
                     precargaExp(selectorModal, false);
-                },
-                error: function (data) {
-                    console.log(data);
                 }
             });
         };
@@ -154,14 +166,15 @@ function BuscarDatos (pagina) {
     precargaExp('#pnlListado', true);
     
     $.ajax({
-        type: "GET",
-        url: "services/rutinagrupal/rutinagrupal-search.php",
+        type: 'GET',
+        url: 'services/rutinagrupal/rutinagrupal-search.php',
         cache: false,
         dataType: 'json',
         data: {
-            criterio: $('#txtSearch').val(),
+            tipobusqueda: '1',
             idempresa: $('#hdIdEmpresa').val(),
-            idcentro: $('#hdIdcentro').val(),
+            idcentro: $('#hdIdCentro').val(),
+            criterio: $('#txtSearch').val(),
             pagina: pagina
         },
         success: function(data){
@@ -185,10 +198,8 @@ function BuscarDatos (pagina) {
                     else
                         strhtml += '<img src="' + foto + '" alt="" class="circle">';
 
-                    strhtml += '<span class="title descripcion">' + data[i].tm_nombre + '</span>';
+                    strhtml += '<span class="title descripcion"> Nombre de Rutina: ' + data[i].tm_nombre + ' Minutos para separación: '+ data[i].tm_minutos_sep + '</span>';
                     
-                    strhtml += '<p>Minutos separación: ' + data[i].tm_minutos_sep + '</span><br>';
-
                     strhtml += '<div class="grouped-buttons place-top-right padding5">';
                     
                     strhtml += '<a class="padding5 mdl-button mdl-button--icon tooltipped" href="#" data-action="more" data-delay="50" data-position="bottom" data-tooltip="M&aacute;s"><i class="material-icons md-18">&#xE5D4;</i></a>';
@@ -200,10 +211,9 @@ function BuscarDatos (pagina) {
                     strhtml += '<div class="divider"></div>';
                     
                     strhtml += '</li>';
-
                     ++i;
                 };
-
+                
                 datagrid.currentPage(datagrid.currentPage() + 1);
 
                 if (pagina == '1')
@@ -219,9 +229,6 @@ function BuscarDatos (pagina) {
             };
             
             precargaExp('#pnlListado', false);
-        },
-        error: function (data) {
-            console.log(data);
         }
     });
 }
@@ -229,51 +236,45 @@ function BuscarDatos (pagina) {
 function GuardarDatos () {
     var hdFoto = document.getElementById('hdFoto');
     var file = fileValue;
-    //var data = newFormData('#pnlForm');
     var data = new FormData();
 
-    //if ($('#form1').valid()){
-        precargaExp('#pnlForm', true);
+    precargaExp('#pnlForm', true);
 
-        if (hdFoto.value == 'images/user-nosetimg-233.jpg')
-            hdFoto.value = 'no-set';
+    if (hdFoto.value == 'images/user-nosetimg-233.jpg'){
+        hdFoto.value = 'no-set';
+    };
 
-        data.append('btnGuardar', 'btnGuardar');
-        data.append('hdIdEmpresa', $('#hdIdEmpresa').val());
-        data.append('hdIdCentro', $('#hdIdCentro').val());
-        data.append('archivo', file);
+    data.append('btnGuardar', 'btnGuardar');
+    data.append('hdIdEmpresa', $('#hdIdEmpresa').val());
+    data.append('hdIdCentro', $('#hdIdCentro').val());
+    data.append('archivo', file);
 
-        var input_data = $('#pnlForm :input').serializeArray();
+    var input_data = $('#pnlForm :input').serializeArray();
 
-        Array.prototype.forEach.call(input_data, function(fields){
-            data.append(fields.name, fields.value);
-        });
+    Array.prototype.forEach.call(input_data, function(fields){
+        data.append(fields.name, fields.value);
+    });
 
-        $.ajax({
-            type: "POST",
-            url: 'services/rutinagrupal/rutinagrupal-post.php',
-            contentType:false,
-            processData:false,
-            cache: false,
-            data: data,
-            dataType: 'json',
-            success: function(data){
-                precargaExp('#pnlForm', false);
-                //showSnackbar({ message: data.titulomsje });
-                createSnackbar(data.titulomsje);
+    $.ajax({
+        type: "POST",
+        url: 'services/rutinagrupal/rutinagrupal-post.php',
+        contentType:false,
+        processData:false,
+        cache: false,
+        data: data,
+        dataType: 'json',
+        success: function(data){
+            precargaExp('#pnlForm', false);
+
+            createSnackbar(data.titulomsje);
                 
-                if (Number(data.rpta) > 0){
-                    // removeValidFormRegister();
-                    closeCustomModal('#pnlForm');
-                    paginaGeneral = 1;
-                    BuscarDatos('1');
-                };
-            },
-            error: function (data) {
-                console.log(data);
-            }
-        });
-    //};
+            if (data.rpta != '0'){
+                // removeValidFormRegister();
+                closeCustomModal('#pnlForm');
+                BuscarDatos('1');
+            };
+        }
+    });
 }
 
 function Eliminarrutinagrupal () {
@@ -299,6 +300,7 @@ function EliminarItemrutinagrupal (item, mode) {
         processData: false,
         success: function(data){
             var titulomsje = '';
+            var itemSelected = $(item);
             var endqueue = false;
 
             if (data.rpta == '0'){
@@ -306,7 +308,7 @@ function EliminarItemrutinagrupal (item, mode) {
                 titulomsje = 'No se puede eliminar';
             }
             else {
-                $(item).fadeOut(400, function() {
+                itemSelected.fadeOut(400, function() {
                     $(this).remove();
                 });
                 
@@ -328,8 +330,12 @@ function EliminarItemrutinagrupal (item, mode) {
             
             if (endqueue) {
                 createSnackbar(titulomsje);
+
                 if ($('.actionbar').hasClass('is-visible'))
                     $('.back-button').trigger('click');
+
+                if (typeof endCallback !== 'undefined')
+                    endCallback();
             };
         },
         error:function (data){
@@ -340,4 +346,8 @@ function EliminarItemrutinagrupal (item, mode) {
 
 function Buscar () {
     BuscarDatos('1');
+}
+
+function showAll () {
+    Buscar();
 }

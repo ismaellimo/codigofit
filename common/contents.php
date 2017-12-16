@@ -131,7 +131,7 @@ elseif ($pag == "admin") {
     }
     elseif ($subpag == "equipamiento"){
         $subcontent = $p_equipamiento;
-        $scripts = '<script src="scripts/scale-image.min.js"></script><script src="scripts/upload-photo-script.min.js"></script><script src="scripts/app/admin/equipo-script.js"></script>';
+        $scripts = '<script src="scripts/scale-image.js"></script><script src="scripts/upload-photo-script.js"></script><script src="scripts/app/admin/equipo-script.js"></script>';
     }
     elseif ($subpag == "dieta"){
         $subcontent = $p_dietagym;
@@ -164,6 +164,18 @@ elseif ($pag == "admin") {
     elseif ($subpag == "evaluacioncliente"){
         $subcontent = $p_evaluacioncliente;
         $scripts = '<script src="scripts/app/admin/evaluacioncliente-script.js"></script>';
+    }
+    elseif ($subpag == "evaluacioncliente"){
+        $subcontent = $p_evaluacioncliente;
+        $scripts = '<script src="scripts/app/admin/evaluacioncliente-script.js"></script>';
+    }
+    elseif ($subpag == "rutinacliente"){
+        $subcontent = $p_rutinacliente;
+        $scripts = '<script src="scripts/app/admin/rutinacliente-script.js"></script>';
+    }
+    elseif ($subpag == "dietacliente"){
+        $subcontent = $p_dietacliente;
+        $scripts = '<script src="scripts/app/admin/dietacliente-script.js"></script>';
     }
     elseif ($subpag == "almacen")
         $subcontent = $p_warehouse;
@@ -243,7 +255,7 @@ elseif ($pag == "settings"){
     else {
         if ($subpag == 'empresa'){
             $subcontent = $p_empresa;
-            $scripts = '<script src="scripts/scale-image.min.js"></script><script src="scripts/upload-photo-script.min.js"></script><script src="scripts/app/settings/empresa-script.js"></script>';
+            $scripts = '<script src="scripts/scale-image.js"></script><script src="scripts/upload-photo-script.js"></script><script src="scripts/app/settings/empresa-script.js"></script>';
         }
         elseif ($subpag == 'centro'){
             $subcontent = $p_center;
@@ -299,7 +311,7 @@ elseif ($pag == "settings"){
         }
         elseif ($subpag == 'rutina_grupal'){
             $subcontent = $p_rutina_grupal;
-            $scripts = '<script src="scripts/app/settings/rutinagrupal-script.js"></script>';
+            $scripts = '<script src="scripts/scale-image.js"></script><script src="scripts/upload-photo-script.js"></script><script src="scripts/app/settings/rutinagrupal-script.js"></script>';
         }
         elseif ($subpag == 'zona_corporal'){
             $subcontent = $p_zona_corporal;
@@ -315,7 +327,7 @@ elseif ($pag == "settings"){
         }
         elseif ($subpag == 'rutinagym'){
             $subcontent = $p_rutinagym;
-            $scripts = '<script src="scripts/app/settings/rutinagym-script.js"></script>';
+            $scripts = '<script src="scripts/scale-image.js"></script><script src="scripts/upload-photo-script.js"></script><script src="scripts/app/settings/rutinagym-script.js"></script>';
         }
         elseif ($subpag == 'rutinagymdetalle'){
             $subcontent = $p_rutinagymdetalle;

@@ -272,7 +272,7 @@ function GuardarDatos () {
 
         $.ajax({
             type: "POST",
-            url: 'services/Equipo/Equipo-post.php',
+            url: 'services/equipo/equipo-post.php',
             contentType:false,
             processData:false,
             cache: false,
@@ -311,7 +311,7 @@ function EliminarItemEquipo (item, mode) {
     data.append('hdIdEquipo', idmodel);
 
     $.ajax({
-        url: 'services/Equipo/Equipo-post.php',
+        url: 'services/equipo/equipo-post.php',
         type: 'POST',
         dataType: 'json',
         data: data,

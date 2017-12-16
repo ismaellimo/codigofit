@@ -78,9 +78,9 @@ function MostrarDatos () {
 
             if (countdata > 0){
                 while(i < countdata){
-                    strhtml += '<li class="mdl-list__item dato pos-rel" data-id="' + data[i].tm_idRutinagym + '">';
+                    strhtml += '<li class="mdl-list__item dato pos-rel" data-id="' + data[i].tm_idrutinagym + '">';
                     
-                    strhtml += '<input name="chkItem[]" type="checkbox" class="oculto" value="' + data[i].tm_idRutinagym + '" />';
+                    strhtml += '<input name="chkItem[]" type="checkbox" class="oculto" value="' + data[i].tm_idrutinagym + '" />';
 
                     strhtml += '<span class="mdl-list__item-primary-content">' + data[i].tm_nombre + '</span>';
                     strhtml += '<div class="grouped-buttons place-bottom-right padding5 margin5"><a class="padding5 mdl-button mdl-button--icon tooltipped" href="#" data-action="edit" data-delay="50" data-position="bottom" data-tooltip="Editar"><i class="material-icons">&#xE254;</i></a><a class="padding5 mdl-button mdl-button--icon tooltipped" href="#" data-action="delete" data-delay="50" data-position="bottom" data-tooltip="Eliminar"><i class="material-icons">&#xE872;</i></a></div>';
@@ -145,7 +145,7 @@ function GetDataById (idData) {
                 },
                 success: function (data) {
                     if (data.length > 0) {
-                        $('#hdIdPrimary').val(data[0].tm_idRutinagym);
+                        $('#hdIdPrimary').val(data[0].tm_idrutinagym);
                         $('#txtNombre').val(data[0].tm_nombre);
                         $('#txtCaloriasMinima').val(data[0].tm_calorias_min);
                         $('#txtCaloriasMaxima').val(data[0].tm_calorias_max);
@@ -169,7 +169,7 @@ function EliminarItem (item, mode) {
 
     $.ajax({
         type: "POST",
-        url: 'services/Rutinagym/Rutinagym-post.php',
+        url: 'services/rutinagym/rutinagym-post.php',
         cache: false,
         contentType: false,
         processData: false,

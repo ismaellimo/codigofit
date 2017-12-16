@@ -265,7 +265,7 @@ function BuscarDatos (pagina) {
                     else
                         strhtml += '<img src="' + foto + '" alt="" class="circle">';
 
-                    strhtml += '<span class="title descripcion">' + data[i].tm_nombres + '</span>';
+                    strhtml += '<span class="title descripcion"> Nombres: ' + data[i].tm_nombres + '</span>';
                     
                     strhtml += '<p>Apellidos: ' + data[i].tm_apellidos + ' - DNI: <span class="dni">' + data[i].tm_nrodni + '</span><br>';
 

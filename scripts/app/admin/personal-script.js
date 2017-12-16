@@ -100,6 +100,8 @@ function LimpiarForm () {
     $('#txtTelefono').val('');
     $('#ddlTurnoReg')[0].selectedIndex = 0;
     $('#txtNroDNI').val('').focus();
+
+    Materialize.updateTextFields();
 }
 
 function GoToEdit (idItem) {

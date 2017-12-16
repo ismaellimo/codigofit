@@ -93,7 +93,8 @@ function LimpiarForm () {
     $('#chkMembresia').val(0);
     $('#txtPrecio').val(0);
     $('#txtDias').val(0);
-    $('#txtvencimiento').val(0);
+    $('#txtVencimiento').val(0);
+    Materialize.updateTextFields();
 }
 
 function GoToEdit (idItem) {
@@ -129,7 +130,7 @@ function GoToEdit (idItem) {
                         $('#chkMembresia').val(data[0].tm_membresia);
                         $('#txtPrecio').val(data[0].tm_precio);
                         $('#txtDias').val(data[0].tm_dias);
-                        $('#txtvencimiento').val(data[0].tm_dias_vencimiento);
+                        $('#txtVencimiento').val(data[0].tm_dias_vencimiento);
 
                         if (foto_original != 'no-set')
                             setFoto(foto_edicion);
@@ -179,12 +180,12 @@ function BuscarDatos (pagina) {
 
             if (countdata > 0){
                 while(i < countdata){
-                    var iditem = data[i].tm_idservicio;
+                    var idItem = data[i].tm_idservicio;
                     var foto = data[i].tm_foto.replace('_o', '_s42');
 
-                    strhtml += '<li class="collection-item avatar no-border dato" data-idmodel="' + iditem + '"  data-baselement="' + selectorgrid + '">';
+                    strhtml += '<li class="collection-item avatar no-border dato" data-idmodel="' + idItem + '"  data-baselement="' + selectorgrid + '">';
 
-                    strhtml += '<input name="chkItem[]" type="checkbox" class="oculto" value="' + iditem + '" />';
+                    strhtml += '<input name="chkItem[]" type="checkbox" class="oculto" value="' + idItem + '" />';
 
                     strhtml += '<i class="icon-select material-icons circle white-text">done</i><div class="layer-select"></div>';
 
@@ -240,46 +241,44 @@ function GuardarDatos () {
     var hdFoto = document.getElementById('hdFoto');
     var file = fileValue;
     var data = new FormData();
-    var input_data = $('#gvDatos :input').serializeArray();
-        precargaExp('#gvDatos', true);
 
-        if (hdFoto.value == 'images/user-nosetimg-233.jpg')
-            hdFoto.value = 'no-set';
+    precargaExp('#pnlForm', true);
 
-        data.append('btnGuardar', 'btnGuardar');
-        data.append('hdIdEmpresa', $('#hdIdEmpresa').val());
-        data.append('hdIdCentro', $('#hdIdCentro').val());
-        
+    if (hdFoto.value == 'images/user-nosetimg-233.jpg'){
+        hdFoto.value = 'no-set';
+    };
 
-        Array.prototype.forEach.call(input_data, function(fields){
-            data.append(fields.name, fields.value);
-        });
+    data.append('btnGuardar', 'btnGuardar');
+    data.append('hdIdEmpresa', $('#hdIdEmpresa').val());
+    data.append('hdIdCentro', $('#hdIdCentro').val());
+    data.append('archivo', file);
 
-        $.ajax({
-            type: "POST",
-            url: 'services/servicios/servicios-post.php',
-            contentType:false,
-            processData:false,
-            cache: false,
-            data: data,
-            dataType: 'json',
-            success: function(data){
-                precargaExp('#gvDatos', false);
-                //showSnackbar({ message: data.titulomsje });
-                createSnackbar(data.titulomsje);
+    var input_data = $('#pnlForm :input').serializeArray();
+
+    Array.prototype.forEach.call(input_data, function(fields){
+        data.append(fields.name, fields.value);
+    });
+
+    $.ajax({
+        type: "POST",
+        url: 'services/servicios/servicios-post.php',
+        contentType:false,
+        processData:false,
+        cache: false,
+        data: data,
+        dataType: 'json',
+        success: function(data){
+            precargaExp('#pnlForm', false);
+
+            createSnackbar(data.titulomsje);
                 
-                if (Number(data.rpta) > 0){
-                    // removeValidFormRegister();
-                    closeCustomModal('#gvDatos');
-                    paginaGeneral = 1;
-                    BuscarDatos('1');
-                };
-            },
-            error: function (data) {
-                console.log(data);
-            }
-        });
-    //};
+            if (data.rpta != '0'){
+                // removeValidFormRegister();
+                closeCustomModal('#pnlForm');
+                BuscarDatos('1');
+            };
+        }
+    });
 }
 
 function EliminarServicio () {

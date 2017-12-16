@@ -44,56 +44,90 @@ $countDia = count($rsDia);
         <div class="modal-example-body">
             <input type="hidden" id="hdIdPrimary" name="hdIdPrimary" value="0">
             <div class="scrollbarra padding20">
-                <div class="row no-margin">
-                    <div class="input-field">
-                        <input id="txtNombre" name="txtRutina" type="text" placeholder="Ingrese Rutina" />
-                        <label for="txtRutina"><?php $translate->__('Rutina'); ?></label>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="input-field full-size">
+                            <select id="ddlRutinaGrupal" name="ddlRutinaGrupal" style="width: 100%;" class="browser-default">
+                                <?php
+                                require 'bussiness/rutinagrupal.php';
+                                $objRutina = new clsRutinaGrupal();
+
+                                $rowRutina = $objRutina->Listar('1', $IdEmpresa, $IdCentro, 0, '');
+                                $countRutina = count($rowRutina);
+
+                                if ($countRutina > 0):
+                                    for ($i=0; $i < $countRutina; ++$i):
+                                ?>
+                                <option value="<?php echo $rowRutina[$i]['tm_idrutinagrupal']; ?>">
+                                    <?php echo $rowRutina[$i]['tm_nombre']; ?>
+                                </option>
+                                <?php
+                                    endfor;
+                                endif;
+                                ?>
+                            </select>
+                            <label class="active" for="ddlRutinaGrupal"><?php $translate->__('Rutina grupal'); ?></label>
+                        </div>
                     </div>
-                </div>
-                <div class="row no-margin">
-                    <div class="input-field">
-                        <input id="txtNombre" name="txtInstructor" type="text" placeholder="Ingrese Instructor" />
-                        <label for="txtInstructor"><?php $translate->__('Instructor'); ?></label>
-                    </div>
-                </div>
-                <div class="row no-margin">
-                    <div class="input-field">
-                        <input id="txtNombre" name="txtAmbiente" type="text" placeholder="Ingrese Ambiente" />
-                        <label for="txtAmbiente"><?php $translate->__('Ambiente'); ?></label>
+                    <div class="col-sm-6">
+                        <div class="input-field full-size">
+                            <select id="ddlDia" name="ddlDia" class="browser-default">
+                                <?php
+                                if ($countDia > 0):
+                                    for ($i=0; $i < $countDia; ++$i):
+                                ?>
+                                <option value="<?php echo $rsDia[$i]['ta_codigo']; ?>">
+                                    <?php echo $rsDia[$i]['ta_denominacion']; ?>
+                                </option>
+                                <?php
+                                    endfor;
+                                endif;
+                                ?>
+                            </select>
+                            <label for="ddlDia" class="active"><?php $translate->__('Dia'); ?></label>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="input-field full-size">
-                        <select id="ddlDia" name="ddlDia" class="browser-default">
-                            <?php
-                            if ($countDia > 0):
-                                for ($i=0; $i < $countDia; ++$i):
-                            ?>
-                            <option value="<?php echo $rsDia[$i]['ta_codigo']; ?>">
-                                <?php echo $rsDia[$i]['ta_denominacion']; ?>
-                            </option>
-                            <?php
-                                endfor;
-                            endif;
-                            ?>
-                        </select>
-                        <label for="ddlDia" class="active"><?php $translate->__('Dia'); ?></label>
+                    <div class="col-sm-12">
+                        <div class="input-field full-size">
+                            <select id="ddlInstructor" name="ddlInstructor" style="width: 100%;" class="browser-default">
+                                <?php
+                                require 'bussiness/instructorgrupal.php';
+                                $objInstructor = new clsInstructorgrupal();
+
+                                $rowInstructor = $objInstructor->Listar('1', $IdEmpresa, $IdCentro, 0, '',0);
+                                $countInstructor = count($rowInstructor);
+
+                                if ($countInstructor > 0):
+                                    for ($i=0; $i < $countInstructor; ++$i):
+                                ?>
+                                <option value="<?php echo $rowInstructor[$i]['tm_idinstructorgrupal']; ?>">
+                                    <?php echo $rowInstructor[$i]['tm_nombres'] ; ?>
+                                </option>
+                                <?php
+                                    endfor;
+                                endif;
+                                ?>
+                            </select>
+                            <label class="active" for="ddlInstructor"><?php $translate->__('Instructor'); ?></label>
+                        </div>
+                    </div>  
+                </div>  
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="input-field">
+                            <input id="txtNombre" name="txtHoraInicio" type="text" placeholder="Ingrese HoraInicio" />
+                            <label for="txtHoraInicio"><?php $translate->__('HoraInicio'); ?></label>
+                        </div>
                     </div>
-                </div>
-                <div class="row no-margin">
-                    <div class="input-field">
-                        <input id="txtNombre" name="txtHoraInicio" type="text" placeholder="Ingrese HoraInicio" />
-                        <label for="txtHoraInicio"><?php $translate->__('HoraInicio'); ?></label>
-                    </div>
-                </div>
-                <div class="row no-margin">
-                    <div class="input-field">
+                    <div class="col-sm-4">
+                        <div class="input-field">
                         <input id="txtNombre" name="txtHoraFinal" type="text" placeholder="Ingrese HoraFinal" />
                         <label for="txtHoraFinal"><?php $translate->__('HoraFinal'); ?></label>
                     </div>
-                </div>
-                <div class="row no-margin">
-                    <div class="input-field">
+                    <div class="col-sm-3">
+                        <div class="input-field">
                         <input id="txtNombre" name="txtAforo" type="text" placeholder="Ingrese Aforo" />
                         <label for="txtAforo"><?php $translate->__('Aforo'); ?></label>
                     </div>

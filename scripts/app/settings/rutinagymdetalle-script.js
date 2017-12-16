@@ -6,12 +6,12 @@ $(function () {
         var _row = getParentsUntil(this, '#gvDatos', '.dato');
         
         if (accion == 'edit'){
-            var iditem = _row[0].getAttribute('data-id');
-            GetDataById(iditem);
+            var idItem = _row[0].getAttribute('data-id');
+            GetDataById(idItem);
         }
         else {
             MessageBox({
-                content: '¿Desea eliminar el tipo de ambiente?',
+                content: '¿Desea eliminar el item de la rutina?',
                 width: '320px',
                 height: '130px',
                 buttons: [
@@ -43,9 +43,10 @@ $(function () {
         LimpiarForm();
     });
 
-    $('#txtNombre').on('keydown', function(event) {
+    $('#txtDetalle').on('keydown', function(event) {
         if (event.keyCode == $.ui.keyCode.ENTER){
-              $('#chkGrupal').focus();
+              // $('#chkGrupal').focus();
+               $('#ddlRutina').focus();
             return false;
         };
     });
@@ -55,14 +56,19 @@ $(function () {
 
 function LimpiarForm () {
     $('#hdIdPrimary').val('0');
-    $('#txtCaloriasMinima').val('0');
-    $('#txtCaloriasMaxima').val('0');
-    $('#txtNombre').val('').focus();
+    $('#txtDetalle').val('');
+    $('#ddlZonacorporal').val('0');
+    $('#ddlEquipo').val('0');
+    $('#txtSerie').val('0');
+    $('#txtRepeticiones').val('0');
+    $('#txtPeso').val('0');
+    $('#ddlRutina').val(0).focus();
+    Materialize.updateTextFields();
 }
 
 function MostrarDatos () {
     $.ajax({
-        url: 'services/Rutinagymdetalle/Rutinagymdetalle-search.php',
+        url: 'services/rutinagymdetalle/rutinagymdetalle-search.php',
         type: 'GET',
         dataType: 'json',
         data: {
@@ -79,11 +85,11 @@ function MostrarDatos () {
 
             if (countdata > 0){
                 while(i < countdata){
-                    strhtml += '<li class="mdl-list__item dato pos-rel" data-id="' + data[i].tm_idRutinagymdetalle + '">';
+                    strhtml += '<li class="mdl-list__item dato pos-rel" data-id="' + data[i].td_idrutinagym + '">';
                     
-                    strhtml += '<input name="chkItem[]" type="checkbox" class="oculto" value="' + data[i].tm_idRutinagymdetalle + '" />';
+                    strhtml += '<input name="chkItem[]" type="checkbox" class="oculto" value="' + data[i].td_idrutinagym + '" />';
 
-                    strhtml += '<span class="mdl-list__item-primary-content">' + data[i].tm_nombre + '</span>';
+                    strhtml += '<span class="mdl-list__item-primary-content"> Nombre rutina:' + data[i].nombre + ' - ' + data[i].zona+ ' Equipo:' + data[i].equipo+ ' Serie:' + data[i].tm_serie + ' Repeticiones:' + data[i].tm_repeticiones + '</span>';
                     strhtml += '<div class="grouped-buttons place-bottom-right padding5 margin5"><a class="padding5 mdl-button mdl-button--icon tooltipped" href="#" data-action="edit" data-delay="50" data-position="bottom" data-tooltip="Editar"><i class="material-icons">&#xE254;</i></a><a class="padding5 mdl-button mdl-button--icon tooltipped" href="#" data-action="delete" data-delay="50" data-position="bottom" data-tooltip="Eliminar"><i class="material-icons">&#xE872;</i></a></div>';
                     strhtml += '</li>';
                     ++i;
@@ -94,16 +100,15 @@ function MostrarDatos () {
 
             $('#gvDatos').html(strhtml);
         },
-        error: function (error) {
-            console.log(error);
-        }
+        // error: function (error) {
+        //     console.log(error);
+        // }
     });
 }
 
 function GuardarDatos () {
     var data = new FormData();
-    var input_data = $('#modalRegistro :input').serializeArray();
-
+    var input_data = $('#pnlForm :input').serializeArray();
     data.append('btnGuardar', 'btnGuardar');
 
     Array.prototype.forEach.call(input_data, function(fields){
@@ -112,7 +117,7 @@ function GuardarDatos () {
 
     $.ajax({
         type: "POST",
-        url: 'services/Rutinagymdetalle/Rutinagymdetalle-post.php',
+        url: 'services/rutinagymdetalle/rutinagymdetalle-post.php',
         cache: false,
         contentType: false,
         processData: false,
@@ -126,84 +131,62 @@ function GuardarDatos () {
                 MostrarDatos();
             };
         },
-        error: function (error) {
-            console.log(error);
-        }
+        // error: function (error) {
+        //     console.log(error);
+        // }
     });
 }
 
-function GetDataById (idData) {
+function GetDataById (idItem) {
     var selectorModal = '#pnlForm';
 
     precargaExp(selectorModal, true);
-
-
     LimpiarForm();
-
-
     openModalCallBack(selectorModal, function () {
 
         if (idItem == '0') {
             ListarRutinagym_Combo('0');
             ListarZonacorporal_Combo('0');
             ListarEquipo_Combo('0');
-            $('#ddlTipoEquipo').focus();
+            $('#txtDetalle').focus();
 
             precargaExp(selectorModal, false);
             }
         else {
             $.ajax({
                 type: "GET",
-                url: 'services/Rutinagymdetalle/Rutinagymdetalle-getdetails.php',
+                url: 'services/rutinagymdetalle/rutinagymdetalle-getdetails.php',
                 cache: false,
                 dataType: 'json',
                 data: 'id=' + idItem,
                 success: function (data) {
+
                     if (data.length > 0){
-                        var foto_original = data[0].tm_foto;
-                        var foto_edicion = foto_original.replace("_o", "_s255");
 
-                        $('#hdIdPrimary').val(data[0].tm_idRutinagymdetalle);
-                        $("#ddlTipoRutinagymdetalle").val(data[0].ta_tipo_Rutinagymdetalle);
-                        $('#txtCantidad').val(data[0].tm_Cantidad);
+                        $('#hdIdPrimary').val(data[0].td_idrutinagym);
+                        $('#txtDetalle').val(data[0].td_detalle);
+                        $('#txtSerie').val(data[0].tm_serie);
+                        $('#txtRepeticiones').val(data[0].tm_repeticiones);
+                        $('#txtPeso').val(data[0].tm_peso);
                         
-                        if (foto_original != 'no-set')
-                            setFoto(foto_edicion);
-                        else
-                            foto_edicion = 'images/user-nosetimg-233.jpg';
-
-                        imgFoto.setAttribute('data-src', foto_edicion);
-                        hdFoto.value = foto_original;
-
                         ListarRutinagym_Combo(data[0].tm_idrutinagym);
                         ListarZonacorporal_Combo(data[0].tm_idzonacorporal);
                         ListarEquipo_Combo(data[0].tm_idequipo);
                         
-                        $('#ddlTipoRutinagymdetalle').val(data[0].tm_idrutinagym).focus();
-                        
+                        $("#ddlRutina").val(data[0].tm_idrutinagym);
+                        $("#ddlZonacorporal").val(data[0].tm_idzonacorporal);
+                        $("#ddlEquipo").val(data[0].tm_idequipo).focus();             
                         Materialize.updateTextFields();
                     };
                     
                     precargaExp(selectorModal, false);
                 },
-                error: function (data) {
-                    console.log(data);
-                }
+
             });
         };
     });
 }
 
-// function addValidForm () {
-//     $('#txtNombre').rules('add', {
-//         required: true,
-//         maxlength: 150
-//     });
-// }
-
-// function GuardarDatos () {
-//     $('#form1').submit();
-// }
 function EliminarItem (item, mode) {
     var data = new FormData();
     var id = item.getAttribute('data-id');
@@ -213,7 +196,7 @@ function EliminarItem (item, mode) {
 
     $.ajax({
         type: "POST",
-        url: 'services/Rutinagymdetalle/Rutinagymdetalle-post.php',
+        url: 'services/rutinagymdetalle/rutinagymdetalle-post.php',
         cache: false,
         contentType: false,
         processData: false,
@@ -268,11 +251,11 @@ function EliminarItem (item, mode) {
 function ListarRutinagym_Combo (idrutinagym_default) {
     $.ajax({
         type: 'GET',
-        url: 'services/Rutinagym/Rutinagym-search.php',
+        url: 'services/rutinagym/rutinagym-search.php',
         cache: false,
         dataType: 'json',
         data: {
-            tipobusqueda: '1',
+            tipobusqueda: '4',
             idempresa: $('#hdIdEmpresa').val(),
             idcentro: $('#hdIdCentro').val()
         },
@@ -289,7 +272,7 @@ function ListarRutinagym_Combo (idrutinagym_default) {
                 };
             };
 
-            $('#ddlRutinagym').html(strhtml);
+            $('#ddlRutina').html(strhtml);
         },
         error: function (error) {
             console.log(error);
@@ -329,10 +312,10 @@ function ListarZonacorporal_Combo (idzonacorporal_default) {
     });
 }
 
-function ListarEquipo_Combo (idEquipo_default) {
+function ListarEquipo_Combo (idequipo_default) {
     $.ajax({
         type: 'GET',
-        url: 'services/Equipo/Equipo-search.php',
+        url: 'services/equipo/equipo-search.php',
         cache: false,
         dataType: 'json',
         data: {
@@ -347,8 +330,8 @@ function ListarEquipo_Combo (idEquipo_default) {
 
             if (countdata > 0) {
                 while (i < countdata){
-                    var _selected = idEquipo_default == data[i].tm_idEquipo ? ' selected' : '';
-                    strhtml += '<option' + _selected + ' value="' + data[i].tm_idEquipo + '">' + data[i].tm_nombre + '</option>';
+                    var _selected = idequipo_default == data[i].tm_idequipo ? ' selected' : '';
+                    strhtml += '<option' + _selected + ' value="' + data[i].tm_idequipo + '">' + data[i].tm_nombre + '</option>';
                     ++i;
                 };
             };

@@ -23,8 +23,8 @@ class Db {
 		else {
 			if (($_SERVER['SERVER_NAME'] == 'localhost') || ($_SERVER['SERVER_NAME'] == '127.0.0.1')){
 				$host = '127.0.0.1';
-				$user = 'root';
-				$password = '123@abc';
+				$user = 'Admin';
+				$password = '123456';
 				$db = 'codigofit';
 			}
 			else {

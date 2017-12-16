@@ -78,19 +78,19 @@
                             </div>
                             <div class="row">
                                 <div class="input-field full-size">
-                                    <input class="validate" type="text" id="txtDias" name="txtDias">
+                                    <input class="validate" type="numeric" id="txtDias" name="txtDias">
                                     <label for="txtDias"><?php $translate->__('Días x servicio'); ?></label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field full-size">
-                                    <input class="validate" type="text" id="txtVencimiento" name="txtVencimiento">
+                                    <input class="validate" type="numeric" id="txtVencimiento" name="txtVencimiento">
                                     <label for="txtVencimiento"><?php $translate->__('Días de alerta por vencimiento'); ?></label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field full-size">
-                                    <input class="validate" type="text" id="txtPrecio" name="txtPrecio">
+                                    <input class="validate" type="numeric" id="txtPrecio" name="txtPrecio">
                                     <label for="txtPrecio"><?php $translate->__('Precio'); ?></label>
                                 </div>
                             </div>

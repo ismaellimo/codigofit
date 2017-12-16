@@ -16,6 +16,7 @@ $objTabla = new clsTabla();
 $rsTurno = $objTabla->Listar('BY-FIELD', 'ta_turno');
 $countTurno = count($rsTurno);
 ?>
+<!--        <div id="pnlListado" class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header"> -->
 <form id="form1" name="form1" method="post" class="validado">
     <input type="hidden" id="fnPost" name="fnPost" value="fnPost" />
     <input type="hidden" id="hdPagePersonal" name="hdPage" value="1" />

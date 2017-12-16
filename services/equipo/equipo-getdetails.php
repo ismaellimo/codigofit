@@ -1,6 +1,6 @@
 <?php
 require '../../adata/Db.class.php';
-require '../../bussiness/Equipo.php';
+require '../../bussiness/equipo.php';
 
 $isAjax = isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND
 strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) === 'xmlhttprequest';

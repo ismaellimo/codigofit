@@ -1,6 +1,6 @@
 <?php
 require '../../adata/Db.class.php';
-require '../../bussiness/Personal.php';
+require '../../bussiness/personal.php';
 
 $IdEmpresa = 1;
 $IdCentro = 1;

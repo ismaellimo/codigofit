@@ -93,7 +93,7 @@
                                     <input class="validate" type="text" id="txtCodigo" name="txtCodigo">
                                     <label for="txtCodigo"><?php $translate->__('Código'); ?></label>
                                 </div>
-                            </div> 
+                            </div>  
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="input-field">

@@ -66,7 +66,7 @@
                         <div class="scrollbarra padding20">
                             <div class="row">
                                 <div class="input-field full-size">
-                                    <input class="validate" type="text" id="txtnroDNI" name="txtnroDNI">
+                                    <input class="validate" type="text" id="txtnroDNI" name="txtnroDNI" maxlength="8" size="8">
                                     <label for="txtnroDNI">DNI</label>
                                 </div>
                             </div>

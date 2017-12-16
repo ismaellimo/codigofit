@@ -10,7 +10,7 @@ class clsEquipo
 	function Listar($tipo, $idempresa, $idcentro, $id, $criterio, $pagina)
 	{
 		$bd = $this->objData;
-		$rs = $bd->exec_sp_select('pa_Equipo_listar', array($tipo, $idempresa, $idcentro, $id, $criterio, $pagina));
+		$rs = $bd->exec_sp_select('pa_equipo_listar', array($tipo, $idempresa, $idcentro, $id, $criterio, $pagina));
 		return $rs;
 	}
 
@@ -18,7 +18,7 @@ class clsEquipo
 	function Registrar($idEquipo, $idempresa, $idcentro, $txtNombre, $ddlAmbiente, $ddlZonacorporal, $txtCodigo, $ddlTipoEquipo, $txtCantidad, $txtVideo, $urlFoto, $idusuario, &$rpta, &$titulomsje, &$contenidomsje)
 	{
 		$bd = $this->objData;
-		$sp_name = 'pa_Equipo_registrar';
+		$sp_name = 'pa_equipo_registrar';
 
 		$result = $bd->exec_sp_iud($sp_name, array($idEquipo, $idempresa, $idcentro, $txtNombre, $ddlAmbiente, $ddlZonacorporal, $txtCodigo, $ddlTipoEquipo, $txtCantidad, $txtVideo, $urlFoto, $idusuario), '@rpta, @titulomsje, @contenidomensaje');
 

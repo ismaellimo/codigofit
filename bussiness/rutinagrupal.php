@@ -12,7 +12,7 @@ class clsrutinagrupal {
 		return $rs;
 	}
 
-	function Registrar($idrutinagrupal, $idempresa, $idcentro, $nombre, $minutos, $foto, $idusuario, &$rpta, &$titulomsje, &$contenidomsje)
+	function Registrar($idrutinagrupal, $idempresa, $idcentro, $nombre, $minutos, $foto, $idusuario)
 	{
 		$bd = $this->objData;
 		$sp_name = 'pa_rutinagrupal_registrar';
